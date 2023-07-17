@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>RockPaperScissorsLizardSpock Game</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header-block">
+        <ul>
+            <li>Rock</li>
+            <li>Paper</li>
+            <li>Scissors</li>
+            <li>Lizard</li>
+            <li>Spock</li>
+        </ul>
+        <div class="score">
+            <div class="score-title">Score</div>
+            <div class="score-count">10</div>
+        </div>
+    </header>
+    <!--Section 1 - User Choice images-->
+    <section class="user-choice">
+        <div class="game-card scissors"><img src="assets/images/two.gif" alt="Scissors GIF"></div>
+        <div class="game-card paper"><img src="assets/images/five.gif" alt=""></div>
+        <div class="game-card rock"><img src="assets/images/rise.gif" alt=""></div>
+        <div class="game-card lizard"><img src="assets/images/lizard.png" alt=""></div>
+        <div class="game-card spock"><img src="assets/images/vulcan-salute.gif" alt=""></div>
+    </section>
+
+    <!--Section 2 - Player picked and Computer picked-->
+    <section>
+        <div class="section picked hidden">
+            <div class="choice">
+                <p>You Picked</p>
+                <div class="user-pick"></div>
+            </div>
+            <div class="result hidden">
+                <div class="title">You Lose</div>
+                <button>Play Again</button>
+            </div>
+            <div class="choice">
+                <p>The house picked</p>
+                <div class="pc-picked"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 3 - Game Rules-->
+    <section>
+        <button class="rules-btn">Rules</button>
+        <div class="modal-bg"></div>
+        <div class="modal">
+            <span class="close">
+                <img src="" alt="">
+            </span>
+            <title>Rules</title>
+            <div class="content">
+                <img src="assets/images/rules.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
