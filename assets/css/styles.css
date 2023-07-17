@@ -1,14 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+ }
+ 
+ body {
+    min-height: 100%;
+ }
+
 img {
-    max-width: 100%;
+    max-width: 55%;
+    border-radius: 100%;
 }
+
+button:focus, button:active {
+    outline: 0;
+}
+
+button {
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    margin: 0 20%;
+    padding: 45px 5px 5px;
+    font-family: 'Indie Flower', cursive;    
+    font-weight: 600;
+    color: white;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: #4d687d;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 .flex-row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-column {
@@ -17,6 +52,194 @@ img {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
+ /* Header */
+
+ .title-block {    
+    width: 100%;
+    max-width: 700px;
+    border: 2px solid #9593ab;
+    border-radius: 15px;
+    padding: 17px 22px 16px 31px;
+    margin-bottom: 70px;
+ }
+
+ h1 {
+    font-size: 35px;
+ }
+
+ .score {
+    background: white;
+    width: 140px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px 0;
+    color: black;
+    font-size: 30px;
+ }
+
+ .score-count {
+    color: hsl(229, 25%, 31%);
+    font-size: 63px;
+    line-height: .7;
+    font-weight: 700;
+ }
+
+ /* Choices for the user */
+
+ .user-choice {
+    background: center / contain no-repeat url(../images/pentagon.png);
+    background-size: 1150px;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    height: 467px;
+ }
+
+ .game-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    position: absolute;   
+ }
+
+ .game-card img {
+    position: relative;
+    z-index: 2;
+ }
+
+ .game-card:before {
+    content: '';
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    box-shadow: inset 0 3px 5px hsl(229, 25%, 31%);
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    z-index: 1;
+    transition: background .3s ease, box-shadow .3s ease;
+}
+
+.game-card:hover:before {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.game-card.scissors {
+    background: hsl(40, 84%, 53%);
+    box-shadow: 0px 6px 0px 0px hsl(28, 75%, 44%);
+    top: -50px;
+    left: 285px;
+}
+
+.game-card.paper {
+    background: hsl(230, 89%, 65%);
+    box-shadow: 0px 6px 0px 0px hsl(229, 62%, 34%);
+    top: 105px;
+    right: 75px;
+}
+
+.game-card.rock {
+    background: hsl(349, 70%, 56%);
+    box-shadow: 0px 6px 0px 0px hsl(343, 70%, 30%);
+    bottom: 7px;
+    right: 110px;
+}
+
+.game-card.lizard {
+    background: hsl(261, 72%, 63%);
+    box-shadow: 0px 6px 0px 0px hsl(259, 48%, 38%);
+    bottom: 7px;
+    left: 133px;
+}
+
+.game-card.spock {
+    background:hsl(189, 58%, 57%);
+    box-shadow: 0px 6px 0px 0px hsl(197, 54%, 36%);
+    top: 105px;
+    left: 85px;
+}
+
+/* Picked Section */
+
+.picked {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.picked p {
+    font-size: 23px;
+    line-height: 1;
+    margin: 0 0 66px;
+}
+
+.picked .game-card {
+    position: static;
+    height: 300px;
+    width: 295px;
+}
+
+.picked .game-card:before {
+    width: 230px;
+    height: 221px;
+}
+
+.picked .game-card img {
+    width: 100px;
+}
+
+.choice {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+/* Result block */
+
+.result {
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.result .title {
+    margin: 53px 0 17px;
+    font-size: 58px;
+    line-height: 1;
+}
+
+.result button {
+    border: 1px solid hsl(217, 16%, 45%);
+    padding: 14px 63px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to left, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out, color .3s ease-out;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.result button:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+
+
+.attribution {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
