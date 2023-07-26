@@ -111,7 +111,7 @@ It is imperative that the website maintains a consistent and responsive navigati
     - Feature - Provide the user with the choice to play with an online friend rather than solely with the computer.
     - Reason for not featuring in this release - I did not have enough time to create this option before the submission date and my knowledge of using other programming languages is limited.
 
-[Back to top](#rock,-paper,-scissors,-lizard,-spock,-game)
+[Back to top](#rock-paper-scissors-lizard-spock-game)
 ## Technologies Used
 #### Main Languages Used
 
@@ -128,11 +128,11 @@ It is imperative that the website maintains a consistent and responsive navigati
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
-[Back to top](#rock,-paper,-scissors,-lizard,-spock,-game)
+[Back to top](#rock-paper-scissors-lizard-spock-game)
 
 ## Testing
 
-Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
+Testing information can be found in a separate testing [File](TESTING.md "Link to testing file")
 
 - **Issues and Bugs**
   The developer ran into several issues during the development of the website, with the noteworthy ones listed below along with solutions.
@@ -153,7 +153,7 @@ Testing information can be found in a separate testing [file](TESTING.md "Link t
 
   - ...............
 
-[Back to top](#rock,-paper,-scissors,-lizard,-spock,-game)
+[Back to top](#rock-paper-scissors-lizard-spock-game)
 ## Deployment
 
   #### Deploying on GitHub Pages
@@ -170,7 +170,7 @@ Testing information can be found in a separate testing [file](TESTING.md "Link t
 
 The live link can be found here - https://tcaldato.github.io/...............
 
-[Back to top](#rock,-paper,-scissors,-lizard,-spock,-game)
+[Back to top](#rock-paper-scissors-lizard-spock-game)
 
 ## Credits
 

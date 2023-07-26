@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>RPSLS Game</title>
-</head>
-
-<body class="flex-column">
-
-    <!--Header-->
-    <header class="title-block flex-row">
-        <h1>Rock . Paper . Scissors . Lizard . Spock</h1>
-        <div class="score flex-column">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <title>RPSLS Game</title>
+   </head>
+   <body class="flex-column">
+      <!--Header-->
+      <header class="title-block flex-row">
+         <h1>Rock . Paper . Scissors . Lizard . Spock</h1>
+         <div class="score flex-column">
             <div>Score</div>
             <div class="score-count">0</div>
-        </div>
-    </header>
-    <!--Section 1 - User Choice images-->
-    <section class="user-choice">
-        <div class="game-card scissors"><img src="assets/images/two.gif" alt="GIF of a hand making a Scissors gesture"></div>
-        <div class="game-card paper"><img src="assets/images/five.gif" alt="GIF of a hand making a Paper gesture"></div>
-        <div class="game-card rock"><img src="assets/images/rise.gif" alt="GIF of a hand making a Rock gesture"></div>
-        <div class="game-card lizard"><img src="assets/images/lizard.gif" alt="GIF of a Lizard"></div>
-        <div class="game-card spock"><img src="assets/images/vulcan-salute.gif" alt="GIF of a hand making a Spock gesture"></div>
-    </section>
-
-    <!--Section 2 - Player picked and Computer picked-->
-    <section>
-        <div class="section picked flex-row hidden">
+         </div>
+      </header>
+      <!-- User Choice images-->
+      <div class="user-choice">
+         <div class="game-card scissors"><img src="assets/images/two.gif" alt="GIF of a hand making a Scissors gesture"></div>
+         <div class="game-card paper"><img src="assets/images/five.gif" alt="GIF of a hand making a Paper gesture"></div>
+         <div class="game-card rock"><img src="assets/images/rise.gif" alt="GIF of a hand making a Rock gesture"></div>
+         <div class="game-card lizard"><img src="assets/images/lizard.gif" alt="GIF of a Lizard"></div>
+         <div class="game-card spock"><img src="assets/images/vulcan-salute.gif" alt="GIF of a hand making a Spock gesture"></div>
+      </div>
+      <!--Player picked and Computer picked-->
+      <div>
+         <div class="section picked flex-row hidden">
             <div class="choice flex-column">
-                <p>You Picked</p>
-                <div class="user-pick"></div>
+               <p>You Picked</p>
+               <div class="user-pick"></div>
             </div>
             <div class="result">
-                <div class="title">You Lose</div>
-                <button type="button">Play Again</button>
-                <button type="button" class="reset">Reset Game</button>
+               <div class="title">You Lose</div>
+               <button type="button">Play Again</button>
+               <button type="button" class="reset">Reset Game</button>
             </div>
             <div class="choice flex-column">
-                <p>The house picked</p>
-                <div class="pc-picked"></div>
+               <p>The house picked</p>
+               <div class="pc-picked"></div>
             </div>
+         </div>
         </div>
-    </section>
-
-    <!--Footer-->
-    <footer>
-        <h3>Rules:</h3>
-        <p>Scissors beats Paper and Lizard // Paper beats Rock and Spock // Rock beats Lizard and Scissors //
-             Lizard beats Spock and Paper // Spock beats Scissors and Rock</p>
-    </footer>
-
-    <!--JavaScript-->
-    <script src="assets/js/script.js"></script>
-</body>
+      <!--Footer-->
+      <footer>
+         <h3>Rules:</h3>
+         <p>Scissors beats Paper and Lizard // Paper beats Rock and Spock // Rock beats Lizard and Scissors //
+            Lizard beats Spock and Paper // Spock beats Scissors and Rock
+         </p>
+      </footer>
+      <!--JavaScript-->
+      <script src="assets/js/script.js"></script>
+   </body>
 </html>
