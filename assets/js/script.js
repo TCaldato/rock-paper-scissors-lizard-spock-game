@@ -1,3 +1,4 @@
+
 function game() {
     let actions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let userWinResults = ['scissorspaper', 'paperrock', 'rocklizard', 'lizardspock', 'spockscissors',
@@ -30,6 +31,7 @@ function game() {
         resultElement.querySelector('button').addEventListener('click', tryAgain);
         
     })
+    
 
 }
 

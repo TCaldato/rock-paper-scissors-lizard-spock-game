@@ -212,7 +212,8 @@ body {
 
 .result button, .reset button{
     border: 1px solid hsl(217, 16%, 45%);
-    padding: 14px 63px;
+    min-width: 170px;
+    min-height: 50px;
     border-radius: 10px;
     cursor: pointer;
     background: linear-gradient(to left, #fff 50%, transparent 50%);
