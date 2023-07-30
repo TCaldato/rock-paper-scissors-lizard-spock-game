@@ -175,7 +175,8 @@ h1 {
 /* Picked Section */
 
 .picked {
-	align-items: center;
+    display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
 	text-align: center;
@@ -239,14 +240,6 @@ h1 {
 	color: #fff;
 }
 
-
-.attribution {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 20px;
-	text-align: center;
-}
 
 /* Footer with Rules */
 

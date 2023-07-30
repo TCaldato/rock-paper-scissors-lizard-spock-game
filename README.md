@@ -5,7 +5,7 @@ Looking for a way to unwind and enjoy yourself? Try playing Rock, Paper, Scissor
 
 ![Responsive Mockup Images](*****)
 
-[View the live project here]( ***)
+[View the live project here](https://tcaldato.github.io/rock-paper-scissors-lizard-spock-game/)
 
 ## UX
 
@@ -141,7 +141,7 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
 - **Validator Testing**
 
 - HTML
-  - No errors were returned when passing the Game Page through the official [W3C validator](.........)
+  - No errors were returned when passing the Game Page through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftcaldato.github.io%2Frock-paper-scissors-lizard-spock-game%2F)
   
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](..........)
@@ -168,7 +168,7 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
  6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
  7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
-The live link can be found here - https://tcaldato.github.io/...............
+The live link can be found here - https://tcaldato.github.io/rock-paper-scissors-lizard-spock-game/
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 
