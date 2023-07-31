@@ -36,15 +36,6 @@ body {
 	background: #4d687d;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
-
 .flex-row {
 	display: flex;
 	flex-direction: column;
@@ -175,29 +166,30 @@ h1 {
 /* Picked Section */
 
 .picked {
-    display: flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100%;
+	max-width: 100%;
 	text-align: center;
 	padding: 30px 10px;
+	font-size: 40px;
 }
 
 .picked p {
-	font-size: 35px;
+	font-size: 34px;
 	line-height: 1;
-	margin: 0 0 66px;
 }
 
 .picked .game-card {
 	position: static;
-	height: 300px;
-	width: 295px;
+	height: 160px;
+	width: 160px;
+	margin: 50px;
 }
 
 .picked .game-card:before {
-	width: 230px;
-	height: 221px;
+	width: 130px;
+	height: 130px;
 }
 
 .picked .game-card img {
@@ -212,14 +204,12 @@ h1 {
 
 /* Result of The Game */
 
-.result .reset .title {
-	margin: 53px 0 17px;
-	font-size: 58px;
+.result {
+	margin: 10px 0;
 	line-height: 1;
 }
 
-.result button,
-.reset button {
+.result button {
 	border: 1px solid hsl(217, 16%, 45%);
 	min-width: 170px;
 	min-height: 50px;
@@ -234,8 +224,7 @@ h1 {
 }
 
 
-.result button:hover,
-.reset button:hover {
+.result button:hover {
 	background-position: left bottom;
 	color: #fff;
 }
@@ -343,7 +332,7 @@ p {
 	}
 
 	h1 {
-		font-size: 20px;
+		font-size: 25px;
 	}
 
 	.user-choice {
@@ -395,4 +384,40 @@ p {
 	footer {
 		max-width: 340px;
 	}
+
+	.result button {
+		margin: 10px;
+	}
+
+	.picked {
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+		padding: 10px;
+	}
+
+	.picked p {
+		font-size: 30px;
+		line-height: 1;
+		margin: 10px;
+	}
+
+	.picked .game-card {
+		position: static;
+		height: 120px;
+		width: 120px;
+		margin: 10px;
+	}
+
+	.picked .game-card:before {
+		width: 100px;
+		height: 100px;
+	}
+
+	.choice {
+		width: 100%;
+		height: 100%;
+		align-items: center;
+	}
+
 }
