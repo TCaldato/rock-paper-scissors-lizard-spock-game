@@ -84,7 +84,7 @@ function game() {
        }
     }
  
-    // Function to handle the "Try Again" button click event
+    // Function to handle the "Play Again" button click event
     function tryAgain() {
        userChoiceElement.classList.remove('hidden');
        pickedElement.classList.add('hidden');
@@ -108,7 +108,7 @@ function game() {
        window.localStorage.setItem('gameScore', currentScore);
     }
  
-    // Add an event listener for the "Try Again" button click
+    // Add an event listener for the "Play Again" button click
     resultElement.querySelector('button').addEventListener('click', tryAgain);
  
  }

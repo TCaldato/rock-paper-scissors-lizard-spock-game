@@ -195,5 +195,6 @@ The live link can be found here - https://tcaldato.github.io/rock-paper-scissors
     - [W3Schools](https://www.w3schools.com/#gsc.tab=0)
     - [Stack Overflow](https://stackoverflow.com/)
     - [Blog HubSpot](https://blog.hubspot.com/)
+    - [ChatGPT](https://chat.openai.com/)
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)

@@ -6,9 +6,9 @@ This section will thoroughly assess all project features to ensure proper functi
 
 ### Game Page
 
-Manual testing was conducted on the following elements that appear on every page:
+Manual testing was conducted on the following elements that appear on the Game Page:
 
-- All Gifs on the game page are working properly
+- All Gifs on the Game Page are functioning correctly.
 
  ![Home Interface](assets/images/testing/home.gif)
 
@@ -34,20 +34,28 @@ Manual testing was conducted on the following elements that appear on every page
 
 ![Spock Game-Card](assets/images/testing/spock-card.gif)
 
+- To reset the scoreboard to zero, the user can simply refresh the page:
+
+![Scoreboard to Zero](assets/images/testing/score.gif)
+
 ### Browser Validation
 
 - The testing on various browsers was also conducted, and the following browsers were tested:
 
-    - Chrome:
-    ![Chrome Image](assets/images/testing/chrome.gif)
+- Chrome:
 
-    - Edge:
-    ![Edge Image](assets/images/testing/edge.gif)
+![Chrome Image](assets/images/testing/chrome.gif)
+
+- Edge:
+
+![Edge Image](assets/images/testing/edge.gif)
     
-    - Mozilla:
-    ![Mozilla Firefox Image](assets/images/testing/mozila.gif)
+- Mozilla:
 
-    - Opera:
-    ![Opera Image](assets/images/testing/opera.gif)
+![Mozilla Firefox Image](assets/images/testing/mozila.gif)
 
-[Back to top](#rock-paper-scissors-lizard-spock-game-testing)
+- Opera:
+
+![Opera Image](assets/images/testing/opera.gif)
+
+[Back to top](#rock-paper-scissors-lizard-spock-game---testing)
