@@ -78,7 +78,7 @@ The Game needs to enable the **user** to:
 
 #### Typography
 
-- The typography pairing used on the site is [Indie Flower](https://fonts.google.com/specimen/Indie+Flower), imported from [Google Fonts](https://fonts.google.com/). In case the import fails, there is a backup of the Sans-Serif available.
+- The typography pairing used on the site is [Indie Flower](https://fonts.google.com/specimen/Indie+Flower), imported from [Google Fonts](https://fonts.google.com/).
 
 ## Features
 
@@ -128,7 +128,7 @@ It is imperative that the website maintains a consistent and responsive navigati
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 - [Canva](https://www.canva.com/create/gif-maker/).
-     - Some Gifs were created using.
+     - Canva was used to create GIFs.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 
