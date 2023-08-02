@@ -70,20 +70,28 @@ h1 {
 
 .score {
 	background: white;
-	width: 140px;
+	width: 190px;
 	border-radius: 20px;
 	align-items: center;
 	color: black;
 	font-size: 30px;
 }
 
-.score-count {
+.score-count, .score-count1{
 	color: black;
-	font-size: 55px;
+	font-size: 45px;
 	line-height: 0.5;
 	font-weight: 700;
 	padding-bottom: 7px;
 }
+
+#score-p {
+    font-size: 20px;
+}
+td {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
 
 /* Choices for the user and the Image with the Rules */
 
