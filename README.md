@@ -3,7 +3,7 @@
 
 Looking for a fun way to unwind and enjoy yourself? Why not try playing Rock, Paper, Scissors, Lizard, Spock? This game allows you to choose from five different options and play against the computer. Keep track of your score to see if you can outsmart the computer. Give it a try and see how you do! This enjoyable game was created using HTML/CSS and JavaScript.
 
-![Responsive Mockup Images](assets/images/readme/responsive.jpg)
+![Responsive Mockup Images](assets/images/readme/mockup.jpg)
 
 [View the live project here](https://tcaldato.github.io/rock-paper-scissors-lizard-spock-game/)
 
@@ -68,6 +68,14 @@ The Game needs to enable the **user** to:
 - When a user selects an option on the main page to play against the computer, it opens, with JavaScript, a overlapping information where they can see if they have won or lost the game:
 
 ![Result](assets/images/readme/gamepicked.jpg)
+
+- When the computer reaches 5 points, the game will end and display the message **Computer Wins the Game!** The score will be shown in **red** color to indicate the result.
+
+![Computer Result](assets/images/readme/compwon.jpg)
+
+- When the User reaches 5 points, the game will end and display the message **You Win the Game!** The score will be shown in **green** color to indicate the result.
+
+![User Result](assets/images/readme/userwon.jpg)
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 ## Design
@@ -145,10 +153,10 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
 - **Validator Testing**
 
 - HTML
-  - No errors were returned when passing the Game Page through the official [W3C validator](...........)
+  - No errors were returned when passing the Game Page through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftcaldato.github.io%2Frock-paper-scissors-lizard-spock-game%2F)
   
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](............)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftcaldato.github.io%2Frock-paper-scissors-lizard-spock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - JavaScript
   - No errors were found when passing through the official [JSHint validator](https://jshint.com/)

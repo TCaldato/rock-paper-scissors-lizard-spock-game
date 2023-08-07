@@ -10,33 +10,33 @@ Manual testing was conducted on the following elements that appear on the Game P
 
 - All Gifs on the Game Page are functioning correctly.
 
- ![Home Interface](assets/images/testing/home.gif)
+ ![Home Interface](assets/images/testing/gametest.gif)
 
-- When the User selects a Game-Card, the result page will be opened. Points will be added or removed in the scoreboard depending on whether the User wins or loses, and do not change when it is a tie.
+- When the User selects a Game-Card, the result page will be opened. Points will be added or removed in the scoreboard depending on whether User wins or loses, and do not change when it is a tie.
 
 - The First Card is the Scissors Game-Card:
 
-![Scissors Game-Card](assets/images/testing/scissors-card.gif)
+![Scissors Game-Card](assets/images/testing/scissorstest.gif)
 
 - The Second Card is the Paper Game-Card:
 
-![Paper Game-Card](assets/images/testing/paper-card.gif)
+![Paper Game-Card](assets/images/testing/papertest.gif)
 
 - The Third Card is the Rock Game-Card:
 
-![Rock Game-Card](assets/images/testing/rock-card.gif)
+![Rock Game-Card](assets/images/testing/rocktest.gif)
 
 - The Fourth Card is the Lizard Game-Card:
 
-![Lizard Game-Card](assets/images/testing/lizard-card.gif)
+![Lizard Game-Card](assets/images/testing/lizardtest.gif)
 
 - The Fifth Card is the Spock Game-Card:
 
-![Spock Game-Card](assets/images/testing/spock-card.gif)
+![Spock Game-Card](assets/images/testing/spocktest.gif)
 
-- To reset the scoreboard to zero, the user can simply refresh the page:
+- When User or Computer reaches the score 5, the button **Play Again** will be replaced for **Reset Game** button, and the game starts again when the User clicks on it.
 
-![Scoreboard to Zero](assets/images/testing/score.gif)
+![Reset Game](assets/images/testing/resettest.gif)
 
 ## Browser Validation
 
@@ -44,22 +44,22 @@ Manual testing was conducted on the following elements that appear on the Game P
 
 - Chrome:
 
-![Chrome Image](assets/images/testing/chrome.gif)
+![Chrome Image](assets/images/testing/chrometest.gif)
 
 - Edge:
 
-![Edge Image](assets/images/testing/edge.gif)
-    
+![Edge Image](assets/images/testing/edgetest.gif)
+
 - Mozilla:
 
-![Mozilla Firefox Image](assets/images/testing/mozila.gif)
+![Mozilla Firefox Image](assets/images/testing/mozilatest.gif)
 
 - Opera:
 
-![Opera Image](assets/images/testing/opera.gif)
+![Opera Image](assets/images/testing/operatest.gif)
 
-## User testing 
-My husband, my brother and my Mentor Seun were asked to review the game to point out any bugs and/or user experience issues. Their helpful advice throughout the process led to a few small UX changes in order to create a better experience.
+## User testing
 
+My husband, my Brother and my Mentor Seun were asked to review the game to point out any bugs and/or user experience issues. Their helpful advice throughout the process led to a few small UX changes in order to create a better experience.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game---testing)
