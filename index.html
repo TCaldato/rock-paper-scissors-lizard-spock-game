@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="assets/css/styles.css">
-      <link rel="icon" href="assets/images/jokenpo.png" />
-      <title>RPSLS Game</title>
-   </head>
-   <body class="flex-column">
-      <!--Header-->
-      <header class="title-block flex-row">
-         <h1>Rock . Paper . Scissors . Lizard . Spock</h1>
-         <p id="score-p">The First To Get 5 Points Wins</p>
-         <div class="score flex-row">Score
-            <table>            
-                <tr>
-                    <td>USER</td>
-                    <td class="score-count">0</td>                
-                </tr>
-                <tr>
-                    <td>COMPUTER</td>
-                    <td class="score-count1">0</td>
-                </tr>
-            </table>
-         </div>
-      </header>
-      <!-- User Choice images-->
-      <div class="user-choice">
-         <div class="game-card scissors"><img src="assets/images/scissors.gif" alt="GIF of a hand making a Scissors gesture"></div>
-         <div class="game-card paper"><img src="assets/images/paper.gif" alt="GIF of a hand making a Paper gesture"></div>
-         <div class="game-card rock"><img src="assets/images/rock.gif" alt="GIF of a hand making a Rock gesture"></div>
-         <div class="game-card lizard"><img src="assets/images/lizard.gif" alt="GIF of a Lizard"></div>
-         <div class="game-card spock"><img src="assets/images/spock.gif" alt="GIF of a hand making a Spock gesture"></div>
-      </div>
-      <!--Player picked, Computer picked and the Result-->
-      <div>
-         <div class="section picked flex-row hidden">
-            <div class="choice flex-column">
-               <p>You Picked</p>
-               <div class="user-pick"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="assets/images/index/jokenpo.png" />
+        <title>RPSLS Game</title>
+    </head>
+    <body class="flex-column">
+        <!--Header-->
+        <header class="title-block flex-row">
+            <h1>Rock . Paper . Scissors . Lizard . Spock</h1>
+            <p id="score-p">The First To Get 5 Points Wins</p>
+            <div class="score flex-row">
+                Score
+                <table>
+                    <tr>
+                        <td>USER</td>
+                        <td class="score-count">0</td>
+                    </tr>
+                    <tr>
+                        <td>COMPUTER</td>
+                        <td class="score-count1">0</td>
+                    </tr>
+                </table>
             </div>
-            <div class="result">
-               <div class="title">You Lose</div>
-               <button type="button">Play Again</button>
+        </header>
+        <!-- User Choice images-->
+        <div class="user-choice">
+            <div class="game-card scissors"><img src="assets/images/index/scissors.gif" alt="GIF of a hand making a Scissors gesture"></div>
+            <div class="game-card paper"><img src="assets/images/index/paper.gif" alt="GIF of a hand making a Paper gesture"></div>
+            <div class="game-card rock"><img src="assets/images/index/rock.gif" alt="GIF of a hand making a Rock gesture"></div>
+            <div class="game-card lizard"><img src="assets/images/index/lizard.gif" alt="GIF of a Lizard"></div>
+            <div class="game-card spock"><img src="assets/images/index/spock.gif" alt="GIF of a hand making a Spock gesture"></div>
+        </div>
+        <!--Player picked, Computer picked and the Result-->
+        <div>
+            <div class="section picked flex-row hidden">
+                <div class="choice flex-column">
+                    <p>You Picked</p>
+                    <div class="user-pick"></div>
+                </div>
+                <div class="result">
+                    <div class="title">You Lose</div>
+                    <button type="button">Play Again</button>
+                </div>
+                <div class="choice flex-column">
+                    <p>The House Picked</p>
+                    <div class="pc-pick"></div>
+                </div>
             </div>
-            <div class="choice flex-column">
-               <p>The House Picked</p>
-               <div class="pc-pick"></div>
-            </div>
-         </div>
-      </div>
-      <!--Footer with Game Rules-->
-      <footer>
-         <h3>Rules:</h3>
-         <p>Scissors beats Paper and Lizard // Paper beats Rock and Spock // Rock beats Lizard and Scissors //
-            Lizard beats Spock and Paper // Spock beats Scissors and Rock
-         </p>
-      </footer>
-      <!--JavaScript-->
-      <script src="assets/js/script.js"></script>
-      <!--Icon for the Title on the beginning of the Home Page and Icons-->
-      <script src="https://kit.fontawesome.com/c6fcde1e44.js" crossorigin="anonymous"></script>
-   </body>
+        </div>
+        <!--Footer with Game Rules-->
+        <footer>
+            <h3>Rules:</h3>
+            <p>Scissors beats Paper and Lizard // Paper beats Rock and Spock // Rock beats Lizard and Scissors //
+                Lizard beats Spock and Paper // Spock beats Scissors and Rock
+            </p>
+        </footer>
+        <!--JavaScript-->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

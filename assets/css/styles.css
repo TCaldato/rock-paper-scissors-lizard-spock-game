@@ -1,88 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 img {
-	max-width: 55%;
-	border-radius: 100%;
+    max-width: 55%;
+    border-radius: 100%;
 }
 
 button:focus,
 button:active {
-	outline: 0;
+    outline: 0;
 }
 
 button {
-	font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif, serif;
-	min-height: 100%;
-	margin: 0 10%;
-	padding: 45px 5px 5px;
-	font-family: 'Indie Flower', cursive;
-	font-weight: 600;
-	color: white;
-	align-items: center;
-	min-height: 100vh;
-	position: relative;
-	background: #4d687d;
+    font-family: Arial, Helvetica, sans-serif, serif;
+    min-height: 100%;
+    margin: 0 10%;
+    padding: 45px 5px 5px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
+    color: white;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: #4d687d;
 }
 
 .flex-row {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-column {
-	display: flex;
-	flex-flow: column nowrap;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 
 .hidden {
-	display: none !important;
+    display: none !important;
 }
 
 /* Header */
 
 .title-block {
-	width: 100%;
-	max-width: 700px;
-	border: 2px solid #9593ab;
-	border-radius: 15px;
-	padding: 17px 22px 16px 31px;
-	margin-bottom: 70px;
+    width: 100%;
+    max-width: 700px;
+    border: 2px solid #9593ab;
+    border-radius: 15px;
+    padding: 17px 22px 16px 31px;
+    margin-bottom: 70px;
 }
 
 h1 {
-	font-size: 35px;
-	margin: 0;
+    font-size: 35px;
+    margin: 0;
 }
 
 .score {
-	background: white;
-	width: 190px;
-	border-radius: 20px;
-	align-items: center;
-	color: black;
-	font-size: 30px;
+    background: white;
+    width: 190px;
+    border-radius: 20px;
+    align-items: center;
+    color: black;
+    font-size: 30px;
 }
 
-.score-count, .score-count1{
-	color: black;
-	font-size: 45px;
-	line-height: 0.5;
-	font-weight: 700;
-	padding-bottom: 7px;
+.score-count,
+.score-count1 {
+    color: black;
+    font-size: 45px;
+    line-height: 0.5;
+    font-weight: 700;
+    padding-bottom: 7px;
 }
 
 #score-p {
@@ -92,258 +93,259 @@ h1 {
 td {
     padding: 5px 15px;
     font-size: 20px;
-  }
+}
 
 /* Choices for the user and the Image with the Rules */
 
 .user-choice {
-	background: center / contain no-repeat url(../images/pentagon.png);
-	background-size: 1150px;
-	width: 100%;
-	max-width: 700px;
-	position: relative;
-	height: 467px;
+    background: center / contain no-repeat url(../images/index/pentagon.png);
+    background-size: 1150px;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    height: 467px;
 }
 
 .game-card {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 145px;
-	height: 150px;
-	border-radius: 50%;
-	cursor: pointer;
-	position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
 }
 
 .game-card img {
-	position: relative;
-	z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .game-card:before {
-	content: '';
-	width: 115px;
-	height: 115px;
-	border-radius: 50%;
-	box-shadow: inset 0 3px 5px hsl(229, 25%, 31%);
-	background: rgba(255, 255, 255, 1);
-	position: absolute;
-	z-index: 1;
-	transition: .3s ease, box-shadow .3s ease;
+    content: '';
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    box-shadow: inset 0 3px 5px hsl(229, 25%, 31%);
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    z-index: 1;
+    transition: .3s ease, box-shadow .3s ease;
 }
 
 .game-card:hover:before {
-	background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
 }
 
 .game-card.scissors {
-	background: hsl(40, 84%, 53%);
-	box-shadow: 0px 6px 0px 0px hsl(28, 75%, 44%);
-	top: -50px;
-	left: 285px;
+    background: hsl(40, 84%, 53%);
+    box-shadow: 0px 6px 0px 0px hsl(28, 75%, 44%);
+    top: -50px;
+    left: 285px;
 }
 
 .game-card.paper {
-	background: hsl(230, 89%, 65%);
-	box-shadow: 0px 6px 0px 0px hsl(229, 62%, 34%);
-	top: 105px;
-	right: 75px;
+    background: hsl(230, 89%, 65%);
+    box-shadow: 0px 6px 0px 0px hsl(229, 62%, 34%);
+    top: 105px;
+    right: 75px;
 }
 
 .game-card.rock {
-	background: hsl(349, 70%, 56%);
-	box-shadow: 0px 6px 0px 0px hsl(343, 70%, 30%);
-	bottom: 7px;
-	right: 110px;
+    background: hsl(349, 70%, 56%);
+    box-shadow: 0px 6px 0px 0px hsl(343, 70%, 30%);
+    bottom: 7px;
+    right: 110px;
 }
 
 .game-card.lizard {
-	background: hsl(261, 72%, 63%);
-	box-shadow: 0px 6px 0px 0px hsl(259, 48%, 38%);
-	bottom: 10px;
-	left: 133px;
+    background: hsl(261, 72%, 63%);
+    box-shadow: 0px 6px 0px 0px hsl(259, 48%, 38%);
+    bottom: 10px;
+    left: 133px;
 }
 
 .game-card.spock {
-	background: hsl(189, 58%, 57%);
-	box-shadow: 0px 6px 0px 0px hsl(197, 54%, 36%);
-	top: 105px;
-	left: 85px;
+    background: hsl(189, 58%, 57%);
+    box-shadow: 0px 6px 0px 0px hsl(197, 54%, 36%);
+    top: 105px;
+    left: 85px;
 }
 
 /* Picked Section */
 
 .picked {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 100%;
-	text-align: center;
-	padding: 30px 10px;
-	font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 40px;
 }
 
 .picked p {
-	font-size: 34px;
-	line-height: 1;
+    font-size: 34px;
+    line-height: 1;
 }
 
 .picked .game-card {
-	position: static;
-	height: 160px;
-	width: 160px;
-	margin: 50px;
+    position: static;
+    height: 160px;
+    width: 160px;
+    margin: 50px;
 }
 
 .picked .game-card:before {
-	width: 130px;
-	height: 130px;
+    width: 130px;
+    height: 130px;
 }
 
 .picked .game-card img {
-	width: 100px;
+    width: 100px;
 }
 
 .choice {
-	width: 50%;
-	height: 100%;
-	align-items: center;
+    width: 50%;
+    height: 100%;
+    align-items: center;
 }
 
 /* Result of The Game */
 
 .result {
-	margin: 10px 0;
-	line-height: 1;
+    margin: 10px 0;
+    line-height: 1;
 }
 
 .result button {
-	border: 1px solid hsl(217, 16%, 45%);
-	min-width: 170px;
-	min-height: 50px;
-	border-radius: 10px;
-	cursor: pointer;
-	background: linear-gradient(to left, #fff 50%, transparent 50%);
-	background-size: 250% 100%;
-	background-position: right bottom;
-	transition: .3s ease-out, color .3s ease-out;
-	font-size: 27px;
-	font-weight: bold
+    border: 1px solid hsl(217, 16%, 45%);
+    min-width: 170px;
+    min-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to left, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: .3s ease-out, color .3s ease-out;
+    font-size: 27px;
+    font-weight: bold
 }
 
 .result button:hover {
-	background-position: left bottom;
-	color: #fff;
+    background-position: left bottom;
+    color: #fff;
 }
 
 
 /* Footer with Rules */
 
 footer {
-	display: flex;
-	flex-direction: column;
-	font-size: 20px;
-	text-align: justify;
-	max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: justify;
+    max-width: 700px;
 }
 
 footer h3,
 p {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Media queries */
 
 /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
-	body {
-		margin: 0;
-	}
+    body {
+        margin: 0;
+    }
 
-	.title-block {
-		padding: 12px 12px 12px 24px;
-		border-radius: 5px;
-		margin: 0 0 90px;
-	}
+    .title-block {
+        padding: 12px 12px 12px 24px;
+        border-radius: 5px;
+        margin: 0 0 90px;
+    }
 
-	.score {
-		font-size: 25px;
-	}
+    .score {
+        font-size: 25px;
+    }
 
-	.score-count, .score-count1 {
-		font-size: 35px;
-		line-height: 0.3;
-	}
+    .score-count,
+    .score-count1 {
+        font-size: 35px;
+        line-height: 0.3;
+    }
 
     td {
         padding: 5px 15px;
         font-size: 20px;
     }
 
-	.user-choice {
-		height: 308px;
-		background-size: 850px;
-	}
+    .user-choice {
+        height: 308px;
+        background-size: 850px;
+    }
 
-	.user-choice .game-card {
-		width: 100px;
-		height: 100px;
-	}
+    .user-choice .game-card {
+        width: 100px;
+        height: 100px;
+    }
 
-	.user-choice .game-card:before {
-		width: 75px;
-		height: 75px;
-	}
+    .user-choice .game-card:before {
+        width: 75px;
+        height: 75px;
+    }
 
-	.user-choice .game-card img {
-		width: 35px;
-	}
+    .user-choice .game-card img {
+        width: 35px;
+    }
 
-	.game-card.scissors {
-		left: 310px;
-	}
+    .game-card.scissors {
+        left: 310px;
+    }
 
-	.game-card.paper {
-		top: 61px;
-		right: 155px;
-	}
+    .game-card.paper {
+        top: 61px;
+        right: 155px;
+    }
 
-	.game-card.rock {
-		right: 190px;
-	}
+    .game-card.rock {
+        right: 190px;
+    }
 
-	.game-card.lizard {
-		left: 202px;
-	}
+    .game-card.lizard {
+        left: 202px;
+    }
 
-	.game-card.spock {
-		top: 61px;
-		left: 170px;
-	}
+    .game-card.spock {
+        top: 61px;
+        left: 170px;
+    }
 
-	footer {
-		font-size: 15px;
-	}
+    footer {
+        font-size: 15px;
+    }
 
 }
 
 /* For small screens sizes from 800px wide and down */
 @media screen and (max-width: 800px) {
 
-	body {
-		padding: 10px 5px;
-	}
+    body {
+        padding: 10px 5px;
+    }
 
-	.title-block {
-		margin: 0;
-		max-width: 450px;
-	}
+    .title-block {
+        margin: 0;
+        max-width: 450px;
+    }
 
-	h1 {
-		font-size: 25px;
-	}
+    h1 {
+        font-size: 25px;
+    }
 
     #score-p {
         font-size: 15px;
@@ -354,88 +356,88 @@ p {
         font-size: 15px;
     }
 
-	.user-choice {
-		margin-top: 60px;
-		background-size: 590px;
-		max-width: 350px;
-	}
+    .user-choice {
+        margin-top: 60px;
+        background-size: 590px;
+        max-width: 350px;
+    }
 
-	.user-choice .game-card {
-		width: 90px;
-		height: 90px;
-	}
+    .user-choice .game-card {
+        width: 90px;
+        height: 90px;
+    }
 
-	.user-choice .game-card:before {
-		width: 75px;
-		height: 75px;
-	}
+    .user-choice .game-card:before {
+        width: 75px;
+        height: 75px;
+    }
 
-	.user-choice .game-card img {
-		width: 35px;
-	}
+    .user-choice .game-card img {
+        width: 35px;
+    }
 
-	.game-card.scissors {
-		margin-top: 30px;
-		left: 132px;
-	}
+    .game-card.scissors {
+        margin-top: 30px;
+        left: 132px;
+    }
 
-	.game-card.paper {
-		top: 79px;
-		right: 8px;
-	}
+    .game-card.paper {
+        top: 79px;
+        right: 8px;
+    }
 
-	.game-card.rock {
-		bottom: 30px;
-		right: 36px;
-	}
+    .game-card.rock {
+        bottom: 30px;
+        right: 36px;
+    }
 
-	.game-card.lizard {
-		left: 45px;
-		bottom: 32px;
-	}
+    .game-card.lizard {
+        left: 45px;
+        bottom: 32px;
+    }
 
-	.game-card.spock {
-		top: 74px;
-		left: 20px;
-	}
+    .game-card.spock {
+        top: 74px;
+        left: 20px;
+    }
 
-	footer {
-		max-width: 340px;
-	}
+    footer {
+        max-width: 340px;
+    }
 
-	.result button {
-		margin: 10px;
-	}
+    .result button {
+        margin: 10px;
+    }
 
-	.picked {
-		display: flex;
-		flex-direction: column;
-		font-size: 30px;
-		padding: 10px;
-	}
+    .picked {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        padding: 10px;
+    }
 
-	.picked p {
-		font-size: 30px;
-		line-height: 1;
-		margin: 10px;
-	}
+    .picked p {
+        font-size: 30px;
+        line-height: 1;
+        margin: 10px;
+    }
 
-	.picked .game-card {
-		position: static;
-		height: 120px;
-		width: 120px;
-		margin: 10px;
-	}
+    .picked .game-card {
+        position: static;
+        height: 120px;
+        width: 120px;
+        margin: 10px;
+    }
 
-	.picked .game-card:before {
-		width: 100px;
-		height: 100px;
-	}
+    .picked .game-card:before {
+        width: 100px;
+        height: 100px;
+    }
 
-	.choice {
-		width: 100%;
-		height: 100%;
-		align-items: center;
-	}
+    .choice {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
 
 }

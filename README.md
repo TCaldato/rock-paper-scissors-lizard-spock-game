@@ -1,7 +1,7 @@
 
 # Rock, Paper, Scissors, Lizard, Spock Game
 
-Looking for a way to unwind and enjoy yourself? Try playing Rock, Paper, Scissors, Lizard, Spock! This game lets you choose from five options and play against the computer. Keep track of the score to see if you have better luck than your computer. Give it a try and see how you fare!
+Looking for a fun way to unwind and enjoy yourself? Why not try playing Rock, Paper, Scissors, Lizard, Spock? This game allows you to choose from five different options and play against the computer. Keep track of your score to see if you can outsmart the computer. Give it a try and see how you do! This enjoyable game was created using HTML/CSS and JavaScript.
 
 ![Responsive Mockup Images](assets/images/readme/responsive.jpg)
 
@@ -9,27 +9,27 @@ Looking for a way to unwind and enjoy yourself? Try playing Rock, Paper, Scissor
 
 ## UX
 
-#### The ideal user for this website
+### The ideal user for this website
 
 - This website is perfect for anyone who needs a break and wants to enjoy themselves.
 
-#### Current User Goals
+### Current User Goals
 
 1. Users are looking forward to having a relaxing time.
 2. Their goal is to navigate the game effortlessly and access the necessary tools with ease.
 3. Their desire is to play the game with ease.
 
-#### New User Goals
+### New User Goals
 
 1. Users want to easily understand the game rules.
 2. They want to have a clear understanding of the game's score.
 3. Users want visuals and color schemes that are appealing, relevant, and enjoyable to look at, and that complement the content.
 
-#### Development
+### Development
 
 The game was designed to provide entertainment for users of all ages, from children to the elderly. It was created to be easy to understand and play, allowing users to enjoy it alone or compete with others using the game's score.
 
-#### Target Audience
+### Target Audience
 
 - **Roles:**
   - Current users
@@ -53,11 +53,11 @@ The Game needs to enable the **user** to:
 
 - Have an easy-to-play game that accurately scores their performance and provides an enjoyable experience.
 
-#### Structure
+### Structure
 
 - The game was organized in one page:
 
-![Game Page](assets/images/readme/allpage.jpg)
+![Game Page](assets/images/readme/gamepage.jpg)
 
 - The Main Page is separated into three parts:
 
@@ -67,16 +67,16 @@ The Game needs to enable the **user** to:
 
 - When a user selects an option on the main page to play against the computer, it opens, with JavaScript, a overlapping information where they can see if they have won or lost the game:
 
-![Result](assets/images/readme/result.jpg)
+![Result](assets/images/readme/gamepicked.jpg)
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
-### Design
+## Design
 
-#### Color Scheme
+### Color Scheme
 
 - The color scheme was chosen with the idea of fun in mind. The colors of the card game are bright and vivid, conveying a message of energy, enthusiasm, and fun. However, the background color is a shade of blue that covers most of the screen, providing a sense of calm and softness. This prevents the user from feeling tired even after playing for extended periods of time.
 
-#### Typography
+### Typography
 
 - The typography pairing used on the site is [Indie Flower](https://fonts.google.com/specimen/Indie+Flower), imported from [Google Fonts](https://fonts.google.com/).
 
@@ -97,7 +97,7 @@ It is imperative that the website maintains a consistent and responsive navigati
   - The primary content consists of five cards containing GIFs that display the user's available choices. The options include Rock, Paper, Scissors, Lizard, and Spock. When the user selects one of these options, new information is displayed using JavaScript. This information shows whether the user won or lost the game against the computer.
   - Behind the cards game, an image was displayed that helps the user understand how the game works and how it is scored.
 
-![Game Image](assets/images/readme/game.jpg)
+![Game Image](assets/images/readme/choices.jpg)
 
 - **The Footer**
 
@@ -113,13 +113,13 @@ It is imperative that the website maintains a consistent and responsive navigati
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 ## Technologies Used
-#### Main Languages Used
+### Main Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wikipedia")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wikipedia")
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wikipedia")
 
-#### Frameworks, Libraries & Programs Used
+### Frameworks, Libraries & Programs Used
 
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
     - Google Fonts was used to import the font "Indie Flower" into the style.css file. This font was used throughout the project.
@@ -151,7 +151,7 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
   - No errors were found when passing through the official [(Jigsaw) validator](............)
 
 - JavaScript
-  - No errors were found when passing through the official ![JSHint validator](assets/images/readme/jshint.gif)
+  - No errors were found when passing through the official [JSHint validator](https://jshint.com/)
 
 - **Unfixed Bugs**
 
@@ -160,7 +160,7 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 ## Deployment
 
-  #### Deploying on GitHub Pages
+  ### Deploying on GitHub Pages
 
  - To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
@@ -178,17 +178,17 @@ The live link can be found here - https://tcaldato.github.io/rock-paper-scissors
 
 ## Credits
 
-#### Content 
+### Content 
 
  - The Read Me was written based on Code Institute [Read Me Template](https://github.com/Code-Institute-Solutions/readme-template) and My previous Project [Thrash Metal History](https://github.com/TCaldato/portfolio1-metal).
  - My Brother [Rodrigo Caldato](https://www.linkedin.com/in/rodrigo-caldato-391137115/) helped me understand the logic of JavaScript.
 
-#### Media
+### Media
 
 - The Background Image was created by me using Paint app.
 - Some GIFs are from [Font Awesome](https://fontawesome.com/).
 
-#### Code
+### Code
 
 - To ensure proper implementation of the code, I conducted thorough research and consulted multiple websites. When using copied and edited code, I made sure to reference it properly. The following websites were frequently used during my research process:
 

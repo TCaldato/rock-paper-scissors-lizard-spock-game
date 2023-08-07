@@ -38,7 +38,7 @@ Manual testing was conducted on the following elements that appear on the Game P
 
 ![Scoreboard to Zero](assets/images/testing/score.gif)
 
-### Browser Validation
+## Browser Validation
 
 - The testing on various browsers was also conducted, and the following browsers were tested:
 
@@ -57,5 +57,9 @@ Manual testing was conducted on the following elements that appear on the Game P
 - Opera:
 
 ![Opera Image](assets/images/testing/opera.gif)
+
+## User testing 
+My husband, my brother and my Mentor Seun were asked to review the game to point out any bugs and/or user experience issues. Their helpful advice throughout the process led to a few small UX changes in order to create a better experience.
+
 
 [Back to top](#rock-paper-scissors-lizard-spock-game---testing)
