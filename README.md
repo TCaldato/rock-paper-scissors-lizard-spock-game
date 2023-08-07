@@ -78,6 +78,7 @@ The Game needs to enable the **user** to:
 ![User Result](assets/images/readme/userwon.jpg)
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
+
 ## Design
 
 ### Color Scheme
@@ -120,7 +121,9 @@ It is imperative that the website maintains a consistent and responsive navigati
     - Reason for not featuring in this release - I did not have enough time to create this option before the submission date and my knowledge of using other programming languages is limited.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
+
 ## Technologies Used
+
 ### Main Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wikipedia")
@@ -159,18 +162,19 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftcaldato.github.io%2Frock-paper-scissors-lizard-spock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - JavaScript
-  - No errors were found when passing through the official [JSHint validator](https://jshint.com/)
+  - No errors were found when passing through the official [JSHint validator](https://jshint.com/). The test is on the [File](TESTING.md "Link to testing file")
 
 - **Unfixed Bugs**
 
   - All of the bugs that were discovered have been resolved.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
+
 ## Deployment
 
-  ### Deploying on GitHub Pages
+### Deploying on GitHub Pages
 
- - To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+- To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
  1. Log into GitHub or create an account.
  2. Locate the GitHub Repository.
@@ -186,10 +190,10 @@ The live link can be found here - https://tcaldato.github.io/rock-paper-scissors
 
 ## Credits
 
-### Content 
+### Content
 
- - The Read Me was written based on Code Institute [Read Me Template](https://github.com/Code-Institute-Solutions/readme-template) and My previous Project [Thrash Metal History](https://github.com/TCaldato/portfolio1-metal).
- - My Brother [Rodrigo Caldato](https://www.linkedin.com/in/rodrigo-caldato-391137115/) helped me understand the logic of JavaScript.
+- The Read Me was written based on Code Institute [Read Me Template](https://github.com/Code-Institute-Solutions/readme-template) and My previous Project [Thrash Metal History](https://github.com/TCaldato/portfolio1-metal).
+- My Brother [Rodrigo Caldato](https://www.linkedin.com/in/rodrigo-caldato-391137115/) helped me understand the logic of JavaScript.
 
 ### Media
 

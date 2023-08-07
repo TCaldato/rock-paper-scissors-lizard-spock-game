@@ -38,6 +38,12 @@ Manual testing was conducted on the following elements that appear on the Game P
 
 ![Reset Game](assets/images/testing/resettest.gif)
 
+## JavaScript Validation
+
+- JavaScript code was validated by JS Hint:
+
+![JS Validator](assets/images/testing/jsvalidator.gif)
+
 ## Browser Validation
 
 - The testing on various browsers was also conducted, and the following browsers were tested:
