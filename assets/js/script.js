@@ -1,5 +1,4 @@
 /*jshint esversion: 6 */
-// Entry point of the game
 
 // Array of possible actions and winning combinations
 const actions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
@@ -21,6 +20,28 @@ const resultTitleElement = resultElement.querySelector('.title');
 const scoreCountElement = document.querySelector('.score-count');
 const scoreCountElement1 = document.querySelector('.score-count1');
 
+// Variable to store the Cards sound
+const cardSound = new Audio("assets/sounds/clicksound.mp3");
+
+//Variables to store the Win and Lose sound
+const winSound = new Audio("assets/sounds/winsound.mp3");
+const failSound = new Audio("assets/sounds/failsound.mp3");
+
+// Variable to store the Main Music of the Game 
+const mySound = new Audio("assets/sounds/mainsound.mp3");
+const buttonMusic = document.getElementById("button-music");
+
+// EventListener added to Play Music Button to Stop and Play Main Music
+buttonMusic.addEventListener("click", () => {
+    if (mySound.paused) {
+    mySound.volume = 0.3;
+    mySound.loop = true;
+    mySound.play();
+    } else {
+        mySound.pause();
+    }
+});
+
 // Variable to store the current score
 let userScore = 0;
 let compScore = 0;
@@ -30,6 +51,8 @@ updateScoreBoard();
 // Add event listeners for each user choice and start the game when clicked
 document.querySelectorAll('.user-choice .game-card').forEach(card => {
     card.addEventListener('click', (ev) => {
+        cardSound.volume = 0.2;
+        cardSound.play();
         userChoice = getUserChoice(ev.target);
         compChoice = getComputerChoice();
         startGame();
@@ -141,6 +164,9 @@ function updateScoreBoard() {
 
     //Change the score color to green when user's score reaches 5 points
     if (userScore === 5) {
+        mySound.pause();
+        winSound.volume = 0.1;
+        winSound.play();
         scoreCountElement.style.color = 'green';
     } else {
         scoreCountElement.style.color = 'black'; // Reset the color to default if it's not 5 yet
@@ -148,6 +174,9 @@ function updateScoreBoard() {
 
     //Change the score color to red when computer's score reaches 5 points
     if (compScore === 5) {
+        mySound.pause();
+        failSound.volume = 0.1;
+        failSound.play();
         scoreCountElement1.style.color = 'red';
     } else {
         scoreCountElement1.style.color = 'black'; // Reset the color to default if it's not 5 yet

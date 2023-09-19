@@ -26,7 +26,7 @@ body {
     font-family: Arial, Helvetica, sans-serif, serif;
     min-height: 100%;
     margin: 0 10%;
-    padding: 25px 5px 5px;
+    padding: 5px;
     font-family: 'Indie Flower', cursive;
     font-weight: 600;
     color: white;
@@ -96,6 +96,29 @@ td {
 }
 
 /* Choices for the user and the Image with the Rules */
+
+#main-music {
+    margin: 10px 0;
+    line-height: 1;
+}
+
+#button-music {
+    border: 1px solid hsl(217, 16%, 45%);
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to left, #fff 50%, transparent 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: .3s ease-out, color .3s ease-out;
+    font-size: 20px;
+    font-weight: bold
+}
+
+#button-music:hover {
+    background-position: left bottom;
+    color: #fff;   
+}
 
 .user-choice {
     background: center / contain no-repeat url(../images/index/pentagon.png);
