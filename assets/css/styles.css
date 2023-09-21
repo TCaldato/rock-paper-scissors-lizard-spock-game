@@ -59,8 +59,7 @@ body {
     max-width: 700px;
     border: 2px solid #9593ab;
     border-radius: 15px;
-    padding: 17px 22px 16px 31px;
-    margin-bottom: 70px;
+    padding: 10px;
 }
 
 h1 {
@@ -88,6 +87,7 @@ h1 {
 
 #score-p {
     font-size: 20px;
+    margin: auto;
 }
 
 td {
@@ -102,7 +102,43 @@ td {
     line-height: 1;
 }
 
-#button-music {
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #rules-image {
+    border-radius: 0;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 50%;
+    max-height: 100%;
+    overflow: auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-button {
+    color: #df7b7b;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+#button-music, #rules {
     border: 1px solid hsl(217, 16%, 45%);
     width: 350px;
     border-radius: 10px;
@@ -111,11 +147,11 @@ td {
     background-size: 250% 100%;
     background-position: right bottom;
     transition: .3s ease-out, color .3s ease-out;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold
 }
 
-#button-music:hover {
+#button-music:hover, #rules:hover{
     background-position: left bottom;
     color: #fff;   
 }
@@ -127,6 +163,7 @@ td {
     max-width: 700px;
     position: relative;
     height: 467px;
+    margin-top: 95px;
 }
 
 .game-card {
@@ -261,23 +298,6 @@ td {
     color: #fff;
 }
 
-
-/* Footer with Rules */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    text-align: justify;
-    max-width: 700px;
-}
-
-footer h3,
-p {
-    margin: 0;
-    padding: 0;
-}
-
 /* Media queries */
 
 /* For medium screens sizes from 950px wide and down */
@@ -346,10 +366,6 @@ p {
     .game-card.spock {
         top: 61px;
         left: 170px;
-    }
-
-    footer {
-        font-size: 15px;
     }
 
 }
@@ -422,10 +438,6 @@ p {
     .game-card.spock {
         top: 74px;
         left: 20px;
-    }
-
-    footer {
-        max-width: 340px;
     }
 
     .result button {

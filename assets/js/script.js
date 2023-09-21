@@ -20,14 +20,14 @@ const resultTitleElement = resultElement.querySelector('.title');
 const scoreCountElement = document.querySelector('.score-count');
 const scoreCountElement1 = document.querySelector('.score-count1');
 
-// Variable to store the Cards sound
+// Constant to store the Cards sound
 const cardSound = new Audio("assets/sounds/clicksound.mp3");
 
-//Variables to store the Win and Lose sound
+// Constant to store the Win and Lose sound
 const winSound = new Audio("assets/sounds/winsound.mp3");
 const failSound = new Audio("assets/sounds/failsound.mp3");
 
-// Variable to store the Main Music of the Game 
+// Constant to store the Main Music of the Game 
 const mySound = new Audio("assets/sounds/mainsound.mp3");
 const buttonMusic = document.getElementById("button-music");
 
@@ -47,6 +47,27 @@ let userScore = 0;
 let compScore = 0;
 updateScoreBoard();
 
+// Constant for Modal
+const rulesModal = document.getElementById("rules-modal");
+const closeButton = document.querySelector(".close-button");
+const buttonClickRules = document.getElementById("rules");
+
+//Open the Modal when user clicks the button
+buttonClickRules.onclick = function() {
+    rulesModal.style.display = "block";
+}
+
+//Close the Modal when user clicks the X on Modal
+closeButton.onclick = function(){
+    rulesModal.style.display = "none";
+}
+  
+// Close the modal if the user clicks outside of it
+window.onclick = function (event) {
+    if (event.target === rulesModal) {
+    rulesModal.style.display = "none";
+    }
+}
 
 // Add event listeners for each user choice and start the game when clicked
 document.querySelectorAll('.user-choice .game-card').forEach(card => {
