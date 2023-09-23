@@ -3,9 +3,43 @@
 
 Looking for a fun way to unwind and enjoy yourself? Why not try playing Rock, Paper, Scissors, Lizard, Spock? This game allows you to choose from five different options and play against the computer. Keep track of your score to see if you can outsmart the computer. Give it a try and see how you do! This enjoyable game was created using HTML/CSS and JavaScript.
 
+[View the live project here](https://tcaldato.github.io/rock-paper-scissors-lizard-spock-game/)
+
 ![Responsive Mockup Images](assets/images/readme/mockup.jpg)
 
-[View the live project here](https://tcaldato.github.io/rock-paper-scissors-lizard-spock-game/)
+## Table of contents
+
+1. [UX](#ux)
+    1. [The ideal user for this website](#the-ideal-user-for-this-website)
+    2. [Current User Goals](#current-user-goals)
+    3. [New User Goals](#new-user-goals)
+    4. [Development](#development)
+    5. [Target Audience](#target-audience)
+        - [Roles](#roles)
+        - [Demographic](#demographic)
+        - [Psychographic](#psychographic)
+    6. [Structure](#structure)
+    7. [Design](#design)
+        - [Color Scheme](#color-scheme)
+        - [Typography](#typography)
+2. [Features](#features)
+    1. [Existing Features](#existing-features)
+    2. [Features Left to Implement](#features-left-to-implement)
+3. [Technologies Used](#technologies-used)
+    1. [Main Languages](#main-languages)
+    2. [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+4. [Testing](#testing)
+    1. [Issues and Bugs](#issues-and-bugs)
+    2. [Validator Testing](#validator-testing)
+    3. [Unfixed Bugs](#unfixed-bugs)
+5. [Deployment](#deployment)
+    1. [Deploying on GitHub Pages](#deploying-on-github-pages)
+    2. [GitHub Forking and Cloning](#github-forking-and-cloning)
+6. [Credits](#credits)
+    1. [Code](#code)
+    2. [Content](#content)
+    3. [Media](#media)
+7. [Acknowledgements](#acknowledgements)
 
 ## UX
 
@@ -31,23 +65,26 @@ The game was designed to provide entertainment for users of all ages, from child
 
 ### Target Audience
 
-- **Roles:**
-  - Current users
-  - New users
-  - People who enjoy playing fast-paced games
+#### Roles
 
-- **Demographic:**
-  - All ages
-  - All Countries/Cultures
+- Current users
+- New users
+- People who enjoy playing fast-paced games
 
-- **Psychographic:**
-  - Lifestyles:
-    - All kind of life styles
-  - Personality/Attitudes:
-    - Quiet
-    - Independent
-    - Creative
-    - Reserved
+#### Demographic
+
+- All ages
+- All Countries/Cultures
+
+#### Psychographic
+
+- Lifestyles:
+  - All kind of life styles
+- Personality/Attitudes:
+  - Quiet
+  - Independent
+  - Creative
+  - Reserved
 
 The Game needs to enable the **user** to:
 
@@ -109,7 +146,7 @@ It is imperative that the website maintains a consistent and responsive navigati
 
 ![Music and Rules Image](assets/images/readme/music-rules-button.jpg)
 
- - A modal will be displayed containing a picture and a paragraph where users can find a detailed explanation about the game rules.
+ - A modal will be displayed when cickling on "Rules Button" containing a picture and a paragraph where users can find a detailed explanation about the game rules.
 
 ![Modal Image](assets/images/readme/modal.jpg)
 
@@ -126,23 +163,23 @@ It is imperative that the website maintains a consistent and responsive navigati
 
 ![Footer Image](assets/images/readme/footer.jpg)
 
-- **Features Left to Implement**
+### Features Left to Implement
 
-  - **Play the Game with an online friend:**
-    - Feature - Provide the user with the choice to play with an online friend rather than solely with the computer.
-    - Reason for not featuring in this release - I did not have enough time to create this option before the submission date and my knowledge of using other programming languages is limited.
+- **Play the Game with an online friend:**
+  - Feature - Provide the user with the choice to play with an online friend rather than solely with the computer.
+  - Reason for not featuring in this release - I did not have enough time to create this option before the submission date and my knowledge of using other programming languages is limited.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 
 ## Technologies Used
 
-### Main Languages Used
+### Main Languages
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wikipedia")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wikipedia")
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wikipedia")
 
-### Frameworks, Libraries & Programs Used
+### Frameworks, Libraries and Programs
 
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
     - Google Fonts was used to import the font "Indie Flower" into the style.css file. This font was used throughout the project.
@@ -150,8 +187,10 @@ It is imperative that the website maintains a consistent and responsive navigati
      - GitHub was used to store the project after pushing
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
-- [Canva](https://www.canva.com/create/gif-maker/).
+- [Canva](https://www.canva.com/create/gif-maker/ "Link to Canva Homepage").
      - Canva was used to create GIFs.
+- [Pixabay](https://pixabay.com/ "Link to Pixabay Homepage")
+     - Pixabay was used to download the Game Music and Sounds.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 
@@ -159,13 +198,15 @@ It is imperative that the website maintains a consistent and responsive navigati
 
 Testing information can be found in a separate testing [File](TESTING.md "Link to testing file")
 
-- **Issues and Bugs**
-  The developer ran into several issues during the development of the website, with the noteworthy ones listed below along with solutions.
-  - A bug was identified after the user selected an image. The display of the user and PC images was not appearing on the result section, which is generated by JavaScript. I thoroughly examined the JavaScript code for errors, and I found with the help of ChatGPT, that the string interpolation el.classList.add(`game-card`, ${className}) was wrong. I removed ${} and the game-card appeared but not the GIF inside it. Another issue was found in the HTML by myself. The image name and class name were not matching, causing the function **buildChoiceElement** to fail in displaying the game-card with the GIF. After matching the names, the bug was resolved.
-  - I encountered a problem with the score board on my webpage. Despite refreshing the page, the score board was not resetting to zero. Initially, I had used a function that retrieved data from the local storage and added it to an **eventListener** when the page loaded. However, upon debugging the JavaScript in the browser, I discovered that the problem was caused by this function. To solve the issue, I removed the function entirely, which resolved the problem. Now, whenever a user refreshes the page, the score resets to zero.
-  - A bug was indentified trying to replace the **Play Again** button to **Reset Game** and the page be refreshed. When I tried to refresh the page clicking on the button, it only refresehed when clicking twice.The function **resetGame** had a mistake, I created the variable **btn** and after that the eventListener was added. I removed this variable and I left only the eventListener. This action fixed the bug and the page can be refresh normally.
+### Issues and Bugs
 
-- **Validator Testing**
+  The developer ran into several issues during the development of the website, with the noteworthy ones listed below along with solutions.
+
+- A bug was identified after the user selected an image. The display of the user and PC images was not appearing on the result section, which is generated by JavaScript. I thoroughly examined the JavaScript code for errors, and I found with the help of ChatGPT, that the string interpolation el.classList.add(`game-card`, ${className}) was wrong. I removed ${} and the game-card appeared but not the GIF inside it. Another issue was found in the HTML by myself. The image name and class name were not matching, causing the function **buildChoiceElement** to fail in displaying the game-card with the GIF. After matching the names, the bug was resolved.
+- I encountered a problem with the score board on my webpage. Despite refreshing the page, the score board was not resetting to zero. Initially, I had used a function that retrieved data from the local storage and added it to an **eventListener** when the page loaded. However, upon debugging the JavaScript in the browser, I discovered that the problem was caused by this function. To solve the issue, I removed the function entirely, which resolved the problem. Now, whenever a user refreshes the page, the score resets to zero.
+- A bug was indentified trying to replace the **Play Again** button to **Reset Game** and the page be refreshed. When I tried to refresh the page clicking on the button, it only refresehed when clicking twice.The function **resetGame** had a mistake, I created the variable **btn** and after that the eventListener was added. I removed this variable and I left only the eventListener. This action fixed the bug and the page can be refresh normally.
+
+### Validator Testing
 
 - HTML
   - No errors were returned when passing the Game Page through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftcaldato.github.io%2Frock-paper-scissors-lizard-spock-game%2F)
@@ -177,15 +218,16 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
   - No errors were found when passing through the official JSHint validator:
 
     <details>
+
     <summary>JSHint validator results</summary>
 
-    ![Validation results](assets/images/testing/jsvalidator.gif)
+    ![Validation results](assets/images/readme/jshint.jpg)
 
     </details>
 
-- **Unfixed Bugs**
+### Unfixed Bugs
 
-  - All of the bugs that were discovered have been resolved.
+- All of the bugs that were discovered have been resolved.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 
@@ -257,5 +299,12 @@ To fork and clone the project, you can get more information on  you will need to
     - [Stack Overflow](https://stackoverflow.com/)
     - [Blog HubSpot](https://blog.hubspot.com/)
     - [ChatGPT](https://chat.openai.com/)
+
+[Back to top](#rock-paper-scissors-lizard-spock-game)
+
+## Acknowledgements
+
+- I am grateful to Seun, my tutor, for her unwavering support throughout my project. Her expert guidance and motivation helped me excel and achieve my goals.
+- I would like to thank my brother Rodrigo for his patience in helping and teaching me during my dark hours.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
