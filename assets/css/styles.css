@@ -104,16 +104,17 @@ td {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
     z-index: 9999;
     justify-content: center;
     align-items: center;
 }
-  
+
 #rules-image {
     border-radius: 0;
     max-width: 100%;
-    
+
 }
 
 .modal-content {
@@ -129,7 +130,7 @@ td {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-  
+
 .close-button {
     color: #df7b7b;
     float: right;
@@ -152,7 +153,8 @@ td {
     line-height: 1;
 }
 
-#button-music, #rules {
+#button-music,
+#rules {
     border: 1px solid hsl(217, 16%, 45%);
     width: 330px;
     border-radius: 10px;
@@ -165,9 +167,10 @@ td {
     font-weight: bold
 }
 
-#button-music:hover, #rules:hover{
+#button-music:hover,
+#rules:hover {
     background-position: left bottom;
-    color: #fff;   
+    color: #fff;
 }
 
 /* Choices for the user and the Image with the Rules */
@@ -314,6 +317,14 @@ td {
     color: #fff;
 }
 
+/*Footer*/
+
+footer {
+    font-size: 80%;
+    opacity: 40%;
+    margin-top: 40px;
+}
+
 /* Media queries */
 
 /* For medium screens sizes from 950px wide and down */
@@ -342,7 +353,8 @@ td {
         font-size: 20px;
     }
 
-    #button-music, #rules {
+    #button-music,
+    #rules {
         font-size: 15px;
     }
 
@@ -387,6 +399,10 @@ td {
         left: 170px;
     }
 
+    footer {
+        font-size: 60%;
+    }
+
 }
 
 /* For small screens sizes from 800px wide and down */
@@ -414,8 +430,9 @@ td {
         font-size: 15px;
     }
 
-    #button-music, #rules {        
-        width: 170px; 
+    #button-music,
+    #rules {
+        width: 170px;
         font-size: 13px;
     }
 

@@ -34,9 +34,9 @@ const buttonMusic = document.getElementById("button-music");
 // EventListener added to Play Music Button to Stop and Play Main Music
 buttonMusic.addEventListener("click", () => {
     if (mySound.paused) {
-    mySound.volume = 0.3;
-    mySound.loop = true;
-    mySound.play();
+        mySound.volume = 0.3;
+        mySound.loop = true;
+        mySound.play();
     } else {
         mySound.pause();
     }
@@ -55,19 +55,19 @@ const buttonClickRules = document.getElementById("rules");
 //Open the Modal when user clicks the button
 buttonClickRules.onclick = function() {
     rulesModal.style.display = "block";
-}
+};
 
 //Close the Modal when user clicks the X on Modal
-closeButton.onclick = function(){
+closeButton.onclick = function() {
     rulesModal.style.display = "none";
-}
-  
+};
+
 // Close the modal if the user clicks outside of it
-window.onclick = function (event) {
+window.onclick = function(event) {
     if (event.target === rulesModal) {
-    rulesModal.style.display = "none";
+        rulesModal.style.display = "none";
     }
-}
+};
 
 // Add event listeners for each user choice and start the game when clicked
 document.querySelectorAll('.user-choice .game-card').forEach(card => {
@@ -174,7 +174,6 @@ function clearResultBeforeAppend() {
     userPickElement.innerHTML = '';
     pcPickElement.innerHTML = '';
 }
-
 
 // Function to update the score board and save the score in local storage
 function updateScoreBoard() {

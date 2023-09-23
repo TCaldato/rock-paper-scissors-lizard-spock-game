@@ -62,8 +62,8 @@ The Game needs to enable the **user** to:
 - The Main Page is separated into three parts:
 
     1. The Header, with the Title of the Game and the Game Score;
-    2. The Body, with five choices for the user;
-    3. The Footer, with the game rules.
+    2. The Main Content, with Play Music and Rules Button, and five choices for the user;
+    3. The Footer, with the name of the creator and the date the web page was created.
 
 - When a user selects an option on the main page to play against the computer, it opens, with JavaScript, a overlapping information where they can see if they have won or lost the game:
 
@@ -101,6 +101,18 @@ It is imperative that the website maintains a consistent and responsive navigati
 
 ![Header Image](assets/images/readme/header.jpg)
 
+- **Play Music and Rules Button**
+
+  - Below the header, the Play Music and Rules buttons are displayed.
+  - Users can control the main music by clicking the "Play Music" button. The game also includes sounds when users click on the cards and when they win or lose the game.
+  - Users can access the rules of the game with the Rules Button.
+
+![Music and Rules Image](assets/images/readme/music-rules-button.jpg)
+
+ - A modal will be displayed containing a picture and a paragraph where users can find a detailed explanation about the game rules.
+
+![Modal Image](assets/images/readme/modal.jpg)
+
 - **The Primary Content**
 
   - The primary content consists of five cards containing GIFs that display the user's available choices. The options include Rock, Paper, Scissors, Lizard, and Spock. When the user selects one of these options, new information is displayed using JavaScript. This information shows whether the user won or lost the game against the computer.
@@ -110,7 +122,7 @@ It is imperative that the website maintains a consistent and responsive navigati
 
 - **The Footer**
 
-  - In the footer section, the user can find a detailed explanation about the game rules.
+  - In the footer section, the users can find the name of the creator and the date the web page was created.
 
 ![Footer Image](assets/images/readme/footer.jpg)
 
@@ -162,7 +174,14 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftcaldato.github.io%2Frock-paper-scissors-lizard-spock-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - JavaScript
-  - No errors were found when passing through the official [JSHint validator](https://jshint.com/). The test is on the [File](TESTING.md "Link to testing file")
+  - No errors were found when passing through the official JSHint validator:
+
+    <details>
+    <summary>JSHint validator results</summary>
+
+    ![Validation results](assets/images/testing/jsvalidator.gif)
+
+    </details>
 
 - **Unfixed Bugs**
 
@@ -184,7 +203,35 @@ Testing information can be found in a separate testing [File](TESTING.md "Link t
  6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
  7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
-The live link can be found here - https://tcaldato.github.io/rock-paper-scissors-lizard-spock-game/
+### GitHub Forking and Cloning
+
+To fork and clone the project, you can get more information on  you will need to follow these steps:
+
+1. Forking a GitHub repository.
+
+    You might fork a project to propose changes to the upstream, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line.
+    - Navigate to the repository you wish to fork.
+    - In the top-right corner of the page, click Fork.
+    - Under "Owner," select the dropdown menu and click an owner for the forked repository.
+    - By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
+    - Optionally, in the "Description" field, type a description of your fork.
+    - Click Create fork.
+
+2. Cloning your forked repository.
+
+    - Navigate to your forked repository.
+    - Above the list of files, click 'Code'.
+    - To clone the repository using HTTPS:
+        - Under "Clone with HTTPS", click the copy icon (a clipboard).
+    - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority:
+        - Click 'Use SSH', then click the copy icon.
+    - To clone a repository using GitHub CLI:
+        - Click 'Use GitHub CLI', then click the copy icon.
+    - Open Git Bash.
+    - Change the current working directory to the location where you want the cloned directory.
+    - Type git clone, and then paste the URL you copied earlier. It will look like this:
+        git clone https://hostname/YOUR-USERNAME/repo-name
+    - Press Enter. Your local clone will be created.
 
 [Back to top](#rock-paper-scissors-lizard-spock-game)
 
@@ -199,6 +246,7 @@ The live link can be found here - https://tcaldato.github.io/rock-paper-scissors
 
 - The Background Image was created by me using Paint app.
 - Some GIFs are from [Font Awesome](https://fontawesome.com/).
+- The Rules image was taken from [Twitter](https://twitter.com/Lagana/status/175639722759163904).
 
 ### Code
 
